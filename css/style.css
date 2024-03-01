@@ -81,6 +81,8 @@ header{
 		margin-right: 20px;
 	}
 
+
+	
 	/* background covered */
 	.banner{
 		position: relative;
@@ -500,11 +502,11 @@ p{
 }
 
 .course-col{
-	flex-basis: 30%;
+	flex-basis: 22%;
 	background: #dfd7d7;
 	border-radius: 10px;
 	margin-bottom: 5%;
-	padding: 20px 12px;
+	padding: 17px 10px;
 	box-sizing: border-box;
 	transition: 0.3s;
 }
@@ -883,11 +885,12 @@ ul{
    }
 
    .last_footer{
-	padding: 3px;
+	padding: 10px 8px;
 	background-color: rgb(68, 71, 68);
    }
 
    .last_footer p{
+	font-size: 16px;
 	color:#FFF;
 	text-align: center;
    }
