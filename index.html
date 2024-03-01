@@ -1,113 +1,308 @@
+
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"/>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="x-icon" href="./image/l.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>LearnEverything</title>
+	<link rel="stylesheet"href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 
-    <link rel="stylesheet" href="style.css" />
-    
-    <title>Quiz App</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="start-screen">
-        <h1 class="heading">Quiz App</h1>
-        <div class="settings">
-          <label for="num-questions">Number of Questions:</label>
-          <select id="num-questions">
-            <option value="5">5</option>
-            <option value="10">10</option>
-            <option value="15">15</option>
-            <option value="20">20</option>
-            <option value="20">30</option>
-            <option value="20">40</option>
-            <option value="20">50</option>
-          </select>
-          <label for="category">Select Category:</label>
-          <select id="category">
-            <option value="">any category</option>
-            <option value="9">general knowledge</option>
-            <option value="10">books</option>
-            <option value="11">films</option>
-            <option value="12">music</option>
-            <option value="14">television</option>
-            <option value="15">video games</option>
-            <option value="16">board games</option>
-            <option value="17">science and nature</option>
-            <option value="18">computers</option>
-            <option value="19">mathematics</option>
-            <option value="20">mythology</option>
-            <option value="21">sports</option>
-            <option value="22">geography</option>
-            <option value="23">history</option>
-            <option value="24">politics</option>
-            <option value="25">art</option>
-            <option value="28">vehicles</option>
-          </select>
-          <label for="difficulty">Select difficulty:</label>
-          <select id="difficulty">
-            <option value="">any difficulty</option>
-            <option value="easy">easy</option>
-            <option value="medium">medium</option>
-            <option value="hard">hard</option>
-          </select>
-          <label for="time">Select time per question:</label>
-          <select id="time">
-            <option value="10">10 seconds</option>
-            <option value="15">15 seconds</option>
-            <option value="20">20 seconds</option>
-            <option value="25">25 seconds</option>
-            <option value="30">30 seconds</option>
-            <option value="60">60 seconds</option>
-          </select>
-        </div>
-        <button class="btn start">Start Quiz</button>
-      </div>
-      <div class="quiz hide">
-        <div class="timer">
-          <div class="progress">
-            <div class="progress-bar"></div>
-            <span class="progress-text"></span>
-          </div>
-        </div>
-        <div class="question-wrapper">
-          <div class="number">
-            Question <span class="current">1</span>
-            <span class="total">/10</span>
-          </div>
-          <div class="question">This is a question This is a question?</div>
-        </div>
-        <div class="answer-wrapper">
-          <div class="answer selected">
-            <span class="text">answer</span>
-            <span class="checkbox">
-              <i class="fas fa-check"></i>
-            </span>
-          </div>
-        </div>
-        <button class="btn submit" disabled>Submit</button>
-        <button class="btn next">Next</button>
-      </div>
-      <div class="end-screen hide">
-        <h1 class="heading">Quiz App</h1>
-        <div class="score">
-          <span class="score-text">Your score:</span>
-          <div>
-            <span class="final-score">0</span>
-            <span class="total-score">/10</span>
-          </div>
-        </div>
-        <button class="btn restart">Restart Quiz</button>
-      </div>
+	<!-- font awesome cdn link -->
+	 <link rel="stylesheet" type="text/css" href="css/all.min.css">
+	 <link rel="stylesheet" type="text/css" href="css/fontawesome.min.css">
+	 <script src="https://kit.fontawesome.com/dac1835f64.js" crossorigin="anonymous"></script>
+	 <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- css link -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo"><img src="image/l.png"></a>
+			<!-- <i class="fa fa-times"  onclick="hideMenu()"></i>  -->
+				<ul class="navmenu">
+					<li><a class="active" href="#"> Home </a></li>
+					<li><a  href="#services"> Course</a></li>
+					<li><a  href="#gallery"> Facilities</a></li>
+					<li><a href="#about"> About Us</a></li>
+					<li><a href="#contact"> Contact Us </a></li>
+
+				</ul>
+	</header>
+		
+	<section class="banner"> </section>
+
+
+<section>
+    <div class="text-box"> 
+	   <div class="text">
+		<div class="slide">
+			<span class="one">Learn</span>
+			<span class="Two">More</span>
+	   </div>
+
+   <h1> <span class="auto-type"></span></h1>
+   <h2>Web <span>Developer</span></h2>
+   <p id="paragraph">I'm a student and I always tryied to learn new things</p>
+   <a href="" class="hero-btn"> <span class="auto-visit"></span></a>
+   </div>
+</section>
+
+
+
+
+       <!-- our services started -->
+
+ <section class="services" id="services">
+	<h1 class="heading"><br> Our Courses </h1><br>
+     <div class="box-container">	
+	    <div class="box">
+    		<img src="image/shyam1.png" alt="">
+    		<h3>C language</h3>
+    		<p style="color: rgb(31, 28, 28);">It is all about C language. This language 
+				is basic for all programmer and coder.it is first language to learner, 
+				similary we learn abc..z to read all english alphabetic and their meaning
+			    or formation of word,sentence ,paragraph as well as whole book.</p>
+    		<a href="./c_language/cl.html" class="btn">Learn More</a>  
+    	</div>
+
+    	<div class="box">
+    		<img src="image/shyam2.png" alt="">
+    		<h3>C++ language</h3>
+    		<p style="color: rgb(31, 28, 28);">It is also a programming language.
+				 C++ is an object-oriented programming (OOP) language that is viewed
+				  by many as the best language for creating large-scale applications.
+				   C++ is a superset of the C language.</p>
+    		<a href="./c++/cpp.html" class="btn">Learn More</a>  
+    	</div>
+
+    	<div class="box">
+    		<img src="image/shyam3.png" alt="">
+    		<h3>HTML/CSS</h3>
+    		<p style="color: rgb(31, 28, 28);">HTML stands for Hyper Text Markup Language 
+				and it is the language that is used to define the structure of a web page. 
+				HTML is used along with CSS and Javascript to design web pages.
+				CSS is used to define styles for your web pages etc.</p>
+    		<a href="htmlcss.html" class="btn">Learn More</a>  
+    	</div>
+
+    	<div class="box">
+    		<img src="image/shyam4.png" alt="">
+    		<h3>JavaScript</h3>
+			<p style="color: rgb(31, 28, 28);">JavaScript is a lightweight programming language commonly
+				 used by web developers to add dynamic interactions to web pages, applications, servers, 
+				 and even games.It works seamlessly alongside HTML and CSS, complementing CSS in formatting
+				  HTML elements while providing user interaction...</p>
+    		<a href="javasript.html" class="btn">Learn More</a>  
+    	</div>
+
+    	<div class="box">
+    		<img src="image/php.png" alt="">
+    		<h3>PHP </h3>
+			<p style="color: rgb(31, 28, 28);">Hypertext Preprocessor (PHP) is an open-source, 
+				free server-side scripting language widely used in web development. According to
+				 Web Technology Surveys, PHP is used by 78.1% of all websites, including high-traffic
+				  websites like Facebook and Wikipedia. .</p>
+    		<a href="php.html" class="btn">Learn More</a>  
+    	</div>
+
+    	<div class="box">
+    		<img style="height: 200px; width: 300px; border-radius: 12px;" src="image/krishna.jpg" alt="">
+    		<h3 style="color: rgb(24, 90, 24);" >Play Quiz</h3>
+			 (Different Category Quiz)
+			<p style="color: rgb(31, 28, 28); margin-top: 0px;"> </p>
+    		<a href="./Category Quiz/index.html" class="btn">Click To Play</a>  
+    	</div>
     </div>
+</section>
 
-    <script src="script.js"></script>
-  </body>
+
+           <!-- gallery section starts -->
+
+   <section class="course" id="gallery">
+    	<h1 class="gallery">Course Level</h1>
+    	<p> Here we have many course related basic knowledge and graduation.<br>many skills on different fields. </p>
+
+    	<div class="row">
+    		<div class="course-col">
+    			<h3>SEE Student</h3>
+    			<p></p>
+				<a href="course_level/see.html" class="btn" >View More</a>
+    		</div>
+
+			<div class="course-col">
+    			<h3>CTEVT Student</h3>
+    			<p></p>
+				<a href="course_level/ctevt.html" class="btn">View More</a>
+    		</div>
+
+    		<div class="course-col">
+    			<h3>SLC/+2</h3>
+    			<p></p>
+					<a href="course_level/slc.html" class="btn">View More</a>
+    		</div>
+
+    		<div class="course-col">
+    			<h3>Post Graduations</h3>
+    			<p></p>
+				<a href="course_level/postgraduate.html" class="btn">View More</a>
+    		</div>
+
+
+    	</div>
+		<div class="row">
+    		<div class="course-col">
+    			<h3>Computer Operator</h3>
+    			<p></p>
+				<a href="./quiz category/index.html" class="btn" target="">View More</a>
+    		</div>
+
+			<div class="course-col">
+    			<h3>Quiz Facts</h3>
+    			<p></p>
+				<a href="" class="btn">View More</a>
+    		</div>
+
+    		<div class="course-col">
+    			<h3>Biology Quiz</h3>
+    			<p></p>
+					<a href="" class="btn">View More</a>
+    		</div>
+
+    		<div class="course-col">
+    			<h3>Others</h3>
+    			<p></p>
+				<a href="" class="btn" target="_blank" >View More</a>
+    		</div>
+
+    </section>
+                
+
+
+          <!-- about us section started -->
+
+   <section class="about" id="about">
+	  <div class="content">
+	  <img src="./image/shyam.jpg">
+	  <div class="text1">
+		<!-- <h1>About Us</h1> -->
+		<h5>Developer and Designer </h5>
+		<p> I am a web developer and app developer since 2021, i started my career on this
+			 field.everyone has different types of interest but for me technology 
+			 become my best way to make my life enjoyable on this field.i will continues 
+			 my career on this filed upto my entire life .i am interest in this modern 
+			 technology.so,my aim is to give some contributes and teach everyone as much i can.</p>
+
+     
+			 <button class="button" onclick="window.location.href=' https://wa.me/9779804768867';" >Let's Chat With Me</button>
+
+        </div>
+	 </div>
+   </section><br><br>
+
+
+   <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+   <script>
+	   var typed = new Typed(".auto-type",{
+		   strings : ["LEARN NEW THINGS ","LEARN PROGRAMMING","WEB DESIGNING","LEARN CODING", "LEARN MORE","VISIT FOR MORE"],
+		   typeSpeed : 120,
+		   typeSpeed : 120,
+		   looped : true
+	   })
+   </script>
+
+
+
+
+
+
+
+         <!-- footer designing starts -->
+
+ <section class="contact" id="contact">
+ 	<div class="content1">
+ 		<h2>Contact Us</h2>
+	  	<p>Please feel free to contact me if you need any further information<br>plese do not hesitate to contact me...</p>
+ 		</div>
+
+ 				  <div class="container1">
+ 					<div class="contactInfo">
+ 					 <div class="box1">
+     <div class="icon"><i class="fas fa-user" aria-hidden="true"></i></div>
+ 					   <div class="text2">
+ 					   	<h3>Address</h3>
+ 					   	 <p>Biratnagar,Morang,Nepal<br>2343454<br>4234342</p>
+ 					   </div>
+ 					</div>
+
+ 				  <div class="box1">
+ 	 <div class="icon"><i class="fas fa-phone" aria-hidden="true"></i></div>
+ 					   <div class="text2">
+ 					   	<h3>Phone</h3>
+ 					   	 <p>+977-9804768867 (NCL)<br>
+ 					   	 	+977-9745479778 (NTC)
+ 					   	 </p>
+
+ 					   </div>
+ 					</div>
+
+ 					<div class="box1">
+     <div class="icon"><i class="fas fa-envelope" aria-hidden></i></div>
+ 					   <div class="text2">
+ 					   	<h3>Email</h3>
+ 					   	 <p>shyamamatya151@gmail.com</p>
+ 					   </div>
+ 					</div>
+ 				 </div>
+
+ <div class="contactForm">
+ 	   <form>
+ 		<h2>Send Message</h2>
+ 		<div class="inputBox">
+ 			<input type="text" name="" required="required" placeholder="Full Name">
+
+ 		</div>
+ 		<div class="inputBox">
+ 			<input type="text" name="" required="required" placeholder="Your Email">
+ 		</div>
+ 		<div class="inputBox">
+ 			<textarea required="required" placeholder="write your message"></textarea>
+ 			
+ 		</div>
+ 		<div class="inputBox">
+ 			<input type="submit" name="" value="Send">
+
+ 		</div>
+ 	  </form>
+      </div>
+ 	 </div>
+ </section><br>
+
+
+ <section class="footer">
+	<h3>More Information </h3>
+	<p>Request you to visit my personal sites and directly contact with me.<br> I will provide a lots of information and idea to develop yourself.</p>
+
+
+	<div class="social-icon">
+		<a href="https://www.facebook.com/home.php"><i class='bx bxl-facebook-circle'></i></a>
+		<a href="https://www.instagram.com/"><i class='bx bxl-instagram'></i></a>
+		<a href=" https://wa.me/9779804768867"><i class='bx bxl-whatsapp' ></i></a>
+		<a href=""><i class='bx bxl-twitter' ></i></a>
+		<a href=""><i class='bx bxl-youtube' ></i></a>
+		<a href=""><i class='bx bxl-linkedin' ></i></a>
+	</div>
+	<!-- <div class="last_footer">
+		<p>Made with <i class="fa-solid fa-heart"></i> by Krishna Soul</p>
+	</div> -->
+</section>
+		<div class="last_footer">
+			<p>Made with <i class="fa-solid fa-heart"></i> by Krishna Soul</p>
+		</div>
+	                  
+</body>
+
+<!-- javascript -->
+<script src="js/script.js"></script>
 </html>
